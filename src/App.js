@@ -19,7 +19,7 @@ function App() {
        localStorage.setItem("auth-token", "");
        token = "";
      } else {
-       const userRes = await axios.get(`${process.env.REACT_APP-base-url}/api/users`, {
+       const userRes = await axios.get(`${process.env.REACT_APP_base_url}/api/users`, {
          headers: { "x-auth-token": token },
        });
        console.log(userRes);
