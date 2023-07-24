@@ -20,7 +20,7 @@ const Home = () => {
      
       setAllQuestions(questionRes.data.data);
     } catch (err) {
-      console.log("problem", err);
+       console.log("problem", err);
     }
   };
 
