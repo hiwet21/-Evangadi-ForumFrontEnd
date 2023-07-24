@@ -16,7 +16,7 @@ import axios from "axios";
    const handleSubmit = async (e) => {
      e.preventDefault();
      try {
-       await axios.post(`${process.env.REACT_APP-base-url}/api/questions`, {
+       await axios.post(`${process.env.REACT_APP_base_url}/api/questions`, {
          id: userData.user.id,
          question: form.question,
          questionDescription: form.questionDescription,
